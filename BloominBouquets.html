@@ -17,16 +17,33 @@
          <!-- buttons in navbar -->
             <div>
                 <button class = "btn btn-light" onclick = "location.href = '#home'">Home</button>
-                <button class = "btn btn-light" onclick = "location.href = '#pages'">Pages</button>
+                
+                <!-- dropdown menu -->
+                <div class = "btn-group">
+                    <button type = "button" class = "btn btn-light dropdown-toggle" data-bs-toggle = "dropdown" aria-expanded = "false">Pages</button>
+                    <ul class = "dropdown-menu">
+                        <li><a class = "dropdown-item" href = "#wedding-bouquets">Wedding Bouquets</a></li>
+                        <li><a class = "dropdown-item" href = "#most-popular">Popular Bouquets</a></li>
+                        <li><a class = "dropdown-item" href = "#seasonal-bouquets">Seasonal Bouquets</a></li>
+                    </ul>
+                </div>
+
                 <button class = "btn btn-light" onclick = "location.href = '#about'">About</button>
-                <button class = "btn btn-light" onclick = "location.href = '#FAQ'">FAQ's</button>
+                <button class = "btn btn-light" onclick = "location.href = '#faq'">FAQ's</button>
             </div>
         </div>
 
 
-        <!-- carousel -->
-        <div id = "flowerCarousel" class = "carousel slide w-50 mx-auto my-4" data-bs-ride = "carousel">
+      <!-- carousel -->
+      <div id = "flowerCarousel" class = "carousel carousel-dark slide w-50 mx-auto my-4" data-bs-ride = "carousel">
            
+        <!-- carousel buttons -->
+        <div class = "carousel-indicators">
+            <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+            <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "1" aria-label = "Slide-2"></button>
+            <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "2" aria-label = "Slide-3"></button>
+        </div>
+
             <div class = "carousel-inner">
 
                 <!-- 1st item of carousel - wedding bouquet -->
@@ -65,8 +82,19 @@
                 <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
                 <span class = "visually-hidden">Next</span>
             </button>
-            
         </div>
+
+
+        <!-- about section -->
+        <section id = "about" class = "my-5">
+            <h3 class = "text-center p-4 bg-light">About Us</h3>
+            <p class = "text-center">we are a small, up and coming local business who aspires to bring some colour and joy to the area with our range of bloomin' bouquets. we provide a range of different bouquets to meet all your flowery needs, ranging from our everyday bouquet for the dining room table to our perfectly composed wedding bouquets.</p>
+        </section>
+
+
+        <!-- main section -->
+
+
 
 
         <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
