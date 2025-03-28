@@ -5,70 +5,79 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width-device-width, initial scale = 1.0">
         <title>Bloomin' bouquets</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel = "stylesheet">
     </head>
 
-    <body>
+    <body style = "background-color: #ffc7da;">
 
         <!-- topbar/navbar -->
-        <div class = "d-flex justify-content-between align-items-center p-3 bg-light fixed-top">
-            <h1 class = "m-0 font-monospace">Bloomin' Bouquets</h1>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class = "container-fluid">
+                <h1 class = "navbar-brand m-0" style = "font-family: Lobster, cursive; font-size: 2rem;">Bloomin' Bouquets</h1>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "navbarNav">
+                    <span class = "navbar-toggle-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse" id = "navbarNav">
+                    <div class = "navbar-nav ms-auto align items-centre">
 
-         <!-- buttons in navbar -->
-            <div>
-                <button class = "btn btn-light" onclick = "location.href = '#home'">Home</button>
-                
-                <!-- dropdown menu -->
-                <div class = "btn-group">
-                    <button type = "button" class = "btn btn-light dropdown-toggle" data-bs-toggle = "dropdown" aria-expanded = "false">Pages</button>
-                    <ul class = "dropdown-menu">
-                        <li><a class = "dropdown-item" href = "#wedding-bouquets">Wedding Bouquets</a></li>
-                        <li><a class = "dropdown-item" href = "#most-popular">Popular Bouquets</a></li>
-                        <li><a class = "dropdown-item" href = "#seasonal-bouquets">Seasonal Bouquets</a></li>
-                    </ul>
+                        <!-- buttons for navbar -->
+                        <button class = "btn btn-light mx-1" onclick = "location.href = '#home'">Home</button>
+
+                        <!-- dropdown menu -->
+                        <div class = "btn-group mx-1">
+                            <button type = "button" class = "btn btn-light dropdown-toggle" data-bs-toggle = "dropdown" aria-expanded = "false">Pages</button>
+                            <ul class = "dropdown-menu">
+                                <li><a class = "dropdown-item" href = "#wedding-bouquets">Wedding Bouquets</a></li>
+                                <li><a class = "dropdown-item" href = "#most-popular">Popular Bouquets</a></li>
+                                <li><a class = "dropdown-item" href = "#seasonal-bouquets">Seasonal Bouquets</a></li>
+                            </ul>
+                        </div>
+                        
+                        <button class = "btn btn-light mx-1" onclick = "location.href = '#about'">About</button>
+                        <button class = "btn btn-light mx-1" onclick = "location.href = '#faq'">FAQ's</button>
+                    </div>
                 </div>
-
-                <button class = "btn btn-light" onclick = "location.href = '#about'">About</button>
-                <button class = "btn btn-light" onclick = "location.href = '#faq'">FAQ's</button>
             </div>
-        </div>
+        </nav>
 
-        <div class = "pt-5 mt-1"></div>
+        <div class = "pt-5 mt-3"></div>
 
 
-      <!-- carousel -->
-      <div id = "flowerCarousel" class = "carousel carousel-dark slide w-50 mx-auto my-4" data-bs-ride = "carousel">
-           
-        <!-- carousel buttons -->
-        <div class = "carousel-indicators">
-            <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
-            <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "1" aria-label = "Slide-2"></button>
-            <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "2" aria-label = "Slide-3"></button>
-        </div>
+        <!-- carousel -->
+        <div class = "container my-4 bg-white rounded shadow-sm p-4">
+            <div id = "flowerCarousel" class = "carousel carousel-dark slide w-25 mx-auto my-4" data-bs-ride = "carousel">
+            
+            <!-- carousel buttons -->
+            <div class = "carousel-indicators">
+                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "1" aria-label = "Slide-2"></button>
+                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "2" aria-label = "Slide-3"></button>
+            </div>
 
-            <div class = "carousel-inner">
+            <div class = "carousel-inner rounded">
 
                 <!-- 1st item of carousel - wedding bouquet -->
                 <div class = "carousel-item active">
                     <div class = "d-flex flex flex-column align-items-center">
-                        <h4 class = "text-center mb-3">Wedding Bouquets</h4>
-                        <img src = "pics/weddingbouquet.png" class = "d-block w-75" alt = "Wedding Bouquets">
+                        <h4 class = "text-center mb-3 fs-5">Wedding Bouquets</h4>
+                        <img src = "pics/weddingbouquet.png" class = "d-block w-100" alt = "Wedding Bouquets">
                     </div>
                 </div>
 
                 <!-- 2nd item of carousel - popular bouquets -->
                 <div class = "carousel-item">
                     <div class = "d-flex flex flex-column align-items-center">
-                        <h4 class = "text-center mb-3">Popular Bouquets</h4>
-                        <img src = "pics/popularbouquet.png" class = "d-block w-75" alt = "Popular Bouquets">
+                        <h4 class = "text-center mb-3 fs-5">Popular Bouquets</h4>
+                        <img src = "pics/popularbouquet.png" class = "d-block w-100" alt = "Popular Bouquets">
                     </div>
                 </div>
 
                 <!-- 3rd item of caoursel - seasonal bouquets -->
                 <div class = "carousel-item">
                     <div class = "d-flex flex flex-column align-items-center">
-                        <h4 class = "text-center mb-3">Seasonal Bouquets</h4>
-                        <img src = "pics/seasonalbouquet.png" class = "d-block w-75" alt = "Seasonal Bouquets">
+                        <h4 class = "text-center mb-3 fs-5">Seasonal Bouquets</h4>
+                        <img src = "pics/seasonalbouquet.png" class = "d-block w-100" alt = "Seasonal Bouquets">
                     </div>
                 </div>
             </div>
@@ -88,12 +97,11 @@
 
 
         <!-- about section -->
-        <section id = "about" class = "container my-5">
+        <section id = "about" class = "my-5 p-4 bg-light rounded">
             <div class = "row justify-content-center">
                 <div class = "col-lg-8 text-center">
-                    <h2 class = "fw-serif mb-4">About Bloomin' Bouquets</h2>
+                    <h2 class = "mb-4 fw-normal">About Bloomin' Bouquets</h2>
                     <div class = "border-top border-3 border-secondary w-25 mx-auto mb-4"></div>
-                    
                     <div class = "card shadow-sm p-4">
                         <p class = "lead">We are a small, up and coming local business who aspires to bring some colour and joy to the area with our range of bloomin' bouquets.</p>
                         <p>We provide a range of different bouquets to meet all your flowery needs, ranging from our everyday bouquet for the dining room table to our perfectly composed wedding bouquets.</p>
@@ -104,7 +112,13 @@
 
 
         <!-- main section -->
+        <main class = "container my-4">
 
+            <!-- wedding bouquets section -->
+            <section id = "wedding-bouquets" class = "my-5">
+                <h3 class
+            </section>
+        </main>
 
 
 
