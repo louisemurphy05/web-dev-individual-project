@@ -4,7 +4,9 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width-device-width, initial scale = 1.0">
-        <title>Bloomin' bouquets</title>
+        
+        <title>Bloomin' Bouquets</title>
+
         <link href = "https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel = "stylesheet">
     </head>
@@ -12,24 +14,24 @@
     <body style = "background-color: #ffc7da;">
 
         <!-- topbar/navbar -->
-        <nav class = "navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <nav class = "navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
             <div class = "container-fluid">
                 <h1 class = "navbar-brand m-0" style = "font-family: Lobster, cursive; font-size: 2rem;">Bloomin' Bouquets</h1>
-                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "navbarNav">
-                    <span class = "navbar-toggle-icon"></span>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav">
+                    <span class = "navbar-toggler-icon"></span>
                 </button>
                 <div class = "collapse navbar-collapse" id = "navbarNav">
-                    <div class = "navbar-nav ms-auto align items-centre">
+                    <div class = "navbar-nav ms-auto align-items-center">
 
                         <!-- buttons for navbar -->
                         <button class = "btn btn-light mx-1" onclick = "location.href = '#home'">Home</button>
 
                         <!-- dropdown menu -->
                         <div class = "btn-group mx-1">
-                            <button type = "button" class = "btn btn-light dropdown-toggle" data-bs-toggle = "dropdown" aria-expanded = "false">Pages</button>
+                            <button type = "button" class = "btn btn-light dropdown-toggle" data-bs-toggle = "dropdown" aria-expanded = "false">Our Bouquets</button>
                             <ul class = "dropdown-menu">
                                 <li><a class = "dropdown-item" href = "#wedding-bouquets">Wedding Bouquets</a></li>
-                                <li><a class = "dropdown-item" href = "#most-popular">Popular Bouquets</a></li>
+                                <li><a class = "dropdown-item" href = "#popular-bouquets">Popular Bouquets</a></li>
                                 <li><a class = "dropdown-item" href = "#seasonal-bouquets">Seasonal Bouquets</a></li>
                             </ul>
                         </div>
@@ -41,25 +43,26 @@
             </div>
         </nav>
 
+        <a id = "home"></a>
         <div class = "pt-5 mt-3"></div>
 
 
         <!-- carousel -->
-        <div class = "container my-4 bg-white rounded shadow-sm p-4">
-            <div id = "flowerCarousel" class = "carousel carousel-dark slide w-25 mx-auto my-4" data-bs-ride = "carousel">
+        <div class = "container my-4 bg-white rounded shadow p-4">
+            <div id = "flowerCarousel" class = "carousel carousel-dark slide w-50 mx-auto my-4" data-bs-ride = "carousel">
             
             <!-- carousel buttons -->
             <div class = "carousel-indicators">
-                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
-                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "1" aria-label = "Slide-2"></button>
-                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "2" aria-label = "Slide-3"></button>
+                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "1" aria-label = "Slide 2"></button>
+                <button type = "button" data-bs-target = "#flowerCarousel" data-bs-slide-to = "2" aria-label = "Slide 3"></button>
             </div>
 
             <div class = "carousel-inner rounded">
 
                 <!-- 1st item of carousel - wedding bouquet -->
                 <div class = "carousel-item active">
-                    <div class = "d-flex flex flex-column align-items-center">
+                    <div class = "d-flex flex-column align-items-center p-3">
                         <h4 class = "text-center mb-3 fs-5">Wedding Bouquets</h4>
                         <img src = "pics/weddingbouquet.png" class = "d-block w-100" alt = "Wedding Bouquets">
                     </div>
@@ -67,7 +70,7 @@
 
                 <!-- 2nd item of carousel - popular bouquets -->
                 <div class = "carousel-item">
-                    <div class = "d-flex flex flex-column align-items-center">
+                    <div class = "d-flex flex-column align-items-center p-3">
                         <h4 class = "text-center mb-3 fs-5">Popular Bouquets</h4>
                         <img src = "pics/popularbouquet.png" class = "d-block w-100" alt = "Popular Bouquets">
                     </div>
@@ -75,7 +78,7 @@
 
                 <!-- 3rd item of caoursel - seasonal bouquets -->
                 <div class = "carousel-item">
-                    <div class = "d-flex flex flex-column align-items-center">
+                    <div class = "d-flex flex-column align-items-center p-3">
                         <h4 class = "text-center mb-3 fs-5">Seasonal Bouquets</h4>
                         <img src = "pics/seasonalbouquet.png" class = "d-block w-100" alt = "Seasonal Bouquets">
                     </div>
@@ -102,9 +105,9 @@
                 <div class = "col-lg-8 text-center">
                     <h2 class = "mb-4 fw-normal">About Bloomin' Bouquets</h2>
                     <div class = "border-top border-3 border-secondary w-25 mx-auto mb-4"></div>
-                    <div class = "card shadow-sm p-4">
-                        <p class = "lead">We are a small, up and coming local business who aspires to bring some colour and joy to the area with our range of bloomin' bouquets.</p>
-                        <p>We provide a range of different bouquets to meet all your flowery needs, ranging from our everyday bouquet for the dining room table to our perfectly composed wedding bouquets.</p>
+                    <div class = "card shadow p-4">
+                        <p class = "fw-normal">We are a small, up and coming local business who aspires to bring some colour and joy to the area with our range of bloomin' bouquets.</p>
+                        <p class = "text-center mb-4 fw-light">We provide a range of different bouquets to meet all your flowery needs, ranging from our everyday bouquet for the dining room table to our perfectly composed wedding bouquets.</p>
                     </div>
                 </div>
             </div>
@@ -115,40 +118,40 @@
 
         <!-- wedding bouquets section - image 1-->
         <section id = "wedding-bouquets" class = "my-5 p-4 bg-light rounded">
-            <h3 class = "text-center p-3 bg-white rounded shadow-sm mb-4 fw-normal">Wedding Bouquets</h3>
-            <p class = "text-center mb-4 fw-light">write something here</p>
+            <h3 class = "text-center p-3 bg-white rounded shadow mb-4 fw-normal">Wedding Bouquets</h3>
+            <p class = "text-center mb-4 fw-light">Our beautiful wedding bouquets are expertly selected to srpuce up your special day.</p>
             <div class = "row g-4">
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/weddingbouquet1.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Wedding Bouquet 1">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Custom Wedding Bouquet</p>
+                            <p class = "card-text mb-0">Custom Wedding Bouquet - £20-£45</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- wedding bouquets section - image 2 -->
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/weddingbouquet2.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Wedding Bouquet 2">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Classic Wedding Bouquet</p>
+                            <p class = "card-text mb-0">Classic Wedding Bouquet - £20-£45</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- wedding bouquets section - image 3 -->
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/weddingbouquet3.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Wedding Bouquet 3">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Modern Wedding Bouquet</p>
+                            <p class = "card-text mb-0">Modern Wedding Bouquet - £20-£45</p>
                         </div>
                     </div>
                 </div>
@@ -158,40 +161,40 @@
 
         <!-- popular bouquets section - image 1-->
         <section id = "popular-bouquets" class = "my-5 p-4 bg-light rounded">
-            <h3 class = "text-center p-3 bg-white rounded shadow-sm mb-4 fw-normal">Popular Bouquets</h3>
-            <p class = "text-center mb-4 fw-light">write something here</p>
+            <h3 class = "text-center p-3 bg-white rounded shadow mb-4 fw-normal">Popular Bouquets</h3>
+            <p class = "text-center mb-4 fw-light">Our most frequently purchased bouquets are popular for a reason, they are perfect for any setting.</p>
             <div class = "row g-4">
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/orchids.jpg" class = "img-fluid object-fit-cover rounded-top" alt = "Popular Bouquet 1">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Orchids</p>
+                            <p class = "card-text mb-0">Orchids - £20-£45</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- popular bouquets section - image 2 -->
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/lilies.jpg" class = "img-fluid object-fit-cover rounded-top" alt = "Popular Bouquet 2">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Lillies</p>
+                            <p class = "card-text mb-0">Lillies - £20-£45</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- popular bouquets section - image 3 -->
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/tulips.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Popular Bouquet 3">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Tulips</p>
+                            <p class = "card-text mb-0">Tulips - £20-£45</p>
                         </div>
                     </div>
                 </div>
@@ -201,46 +204,53 @@
 
         <!-- seasonal bouquets section - image 1 -->
         <section id = "seasonal-bouquets" class = "my-5 p-4 bg-light rounded">
-            <h3 class = "text-center p-3 bg-white rounded shadow-sm mb-4 fw-normal">Seasonal Bouquets</h3>
-            <p class = "text-center mb-4 fw-light">write something here</p>
+            <h3 class = "text-center p-3 bg-white rounded shadow mb-4 fw-normal">Seasonal Bouquets</h3>
+            <p class = "text-center mb-4 fw-light">Our seasonal bouquets are perfect for getting you into the spirit of any season.</p>
             <div class = "row g-4">
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/summerbouquet.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Seasonal Bouquet 1">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Summery Bouquet</p>
+                            <p class = "card-text mb-0">Summery Bouquet - £20-£45</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- seasonal bouquets section - image 2 -->
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/autumnbouquet.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Seasonal Bouquet 2">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Autumnal Bouquet</p>
+                            <p class = "card-text mb-0">Autumnal Bouquet - £20-£45</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- seasonal bouquets section - image 3 -->
                 <div class = "col-md-4">
-                    <div class = "card border-0 shadow-sm h-100">
+                    <div class = "card border-0 shadow h-100">
                         <div class = "ratio ratio-1x1">
                             <img src = "pics/winterbouquet.jpeg" class = "img-fluid object-fit-cover rounded-top" alt = "Seasonal Bouquet 3">
                         </div>
                         <div class = "card-body text-center">
-                            <p class = "card-text mb-0">Wintery Bouquet</p>
+                            <p class = "card-text mb-0">Wintery Bouquet - £20-£45</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>      
 
+
+        <!-- footer -->
+        <footer class = "bg-light text-center py-4 shadow">
+            <div class = "container">
+                <p class = "mb-0">@2025 'Bloomin' Bouquets' | <a href = "#">Privacy Policy</a></p>
+            </div>
+        </footer>
 
 
         <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
